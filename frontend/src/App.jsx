@@ -4,6 +4,11 @@ import Layout from './components/Layout'
 import Inicio from './views/Inicio'
 import MesaDeAyuda from './views/MesaDeAyuda'
 import Login from './views/Login'
+import Registro from './views/Registro'
+import DashLayout from './components/DashLayout'
+import ListadoOrden from './components/ListadoOrden'
+import CrearOrden from './components/CrearOrden'
+import ActualizarOrden from './components/ActualizarOrden'
 
 const App = () => {
   return (
@@ -12,6 +17,7 @@ const App = () => {
         path='/'
         element={<Layout />}
       >
+        {/* rutas publicas */}
         <Route
           index
           element={<Inicio />}
@@ -24,6 +30,28 @@ const App = () => {
           path='contacto'
           element={<MesaDeAyuda />}
         />
+        <Route
+          path='registro'
+          element={<Registro />}
+        />
+        {/* rutas privadas */}
+        <Route
+          path='dash'
+          element={<DashLayout />}
+        >
+          <Route
+            path='listado'
+            element={<ListadoOrden />}
+          />
+          <Route
+            path='crear'
+            element={<CrearOrden />}
+          />
+          <Route
+            path='actualizar'
+            element={<ActualizarOrden />}
+          />
+        </Route>
       </Route>
     </Routes>
   )

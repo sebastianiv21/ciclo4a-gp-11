@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Registro = () => {
   return (
     <main className='container-fluid min-vh-100 login bg-dark'>
       <nav className='navbar'>
@@ -20,7 +20,7 @@ const Login = () => {
         <section className='container p-0 col d-flex'>
           <img
             className='img-fluid rounded ms-auto camion-login'
-            src='/images/login-camion.png'
+            src='/images/registro.png'
             alt='camion'
             width='60%'
           />
@@ -28,6 +28,23 @@ const Login = () => {
         <section className='col p-0 d-flex'>
           <div className='card bg-secondary me-auto my-auto ms-5'>
             <form className='text-center mx-5 my-3'>
+              <div className='mb-3 mt-2'>
+                <h2>Registro de Usuario</h2>
+              </div>
+              <div className='mb-3'>
+                <label
+                  htmlFor='nombres'
+                  className='form-label fs-4 text-white'
+                >
+                  Nombre completo
+                </label>
+                <input
+                  type='text'
+                  className='form-control fs-4 rounded-pill'
+                  id='nombres'
+                  name='nombres'
+                />
+              </div>
               <div className='mb-3'>
                 <label
                   htmlFor='usuario'
@@ -56,21 +73,32 @@ const Login = () => {
                   name='contraseña'
                 />
               </div>
-              <div className='mb-2'>
-                <Link
-                  to='/dash/listado'
-                  className='btn btn-dark btn-lg rounded-pill border-2'
+              <div className='mb-3'>
+                <label
+                  htmlFor='email'
+                  className='form-label fs-4 text-white'
                 >
-                  Iniciar sesión
-                </Link>
+                  Correo electrónico
+                </label>
+                <input
+                  type='email'
+                  className='form-control fs-4 rounded-pill'
+                  id='email'
+                  name='email'
+                />
+              </div>
+              <div className='mb-2'>
+                <button className='btn btn-dark btn-lg rounded-pill border-2'>
+                  Registrarse
+                </button>
               </div>
             </form>
             <div>
               <p className='text-center'>
                 <span className='text-white me-2 mb-3'>
-                  Aún no tienes cuenta?
+                  Ya tienes una cuenta?
                 </span>
-                <Link to='/registro'>Regístrate aquí</Link>
+                <Link to='/login'>Inicia sesión aquí</Link>
               </p>
             </div>
           </div>
@@ -80,4 +108,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Registro
