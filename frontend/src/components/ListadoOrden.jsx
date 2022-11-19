@@ -5,21 +5,21 @@ import { useState } from 'react'
 const ListadoOrden = () => {
   const initialState = [
     {
-      id: 1,
+      id: 53423123,
       fecha: '10/05/2022',
       ciudad: 'Cartagena de Indias',
       direccion: 'Mamonal km 6, Kangupor Ltda',
       estado: 'Guardado',
     },
     {
-      id: 2,
+      id: 74732585,
       fecha: '05/06/2022',
       ciudad: 'Granada',
       direccion: 'Kra 22 calle 15 - 458',
       estado: 'Cancelado',
     },
     {
-      id: 3,
+      id: 96346327,
       fecha: '05/06/2022',
       ciudad: 'Zabaneta',
       direccion: 'Via al Cuartel Kra22 -152',

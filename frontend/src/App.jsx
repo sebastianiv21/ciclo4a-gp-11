@@ -9,6 +9,7 @@ import DashLayout from './components/DashLayout'
 import ListadoOrden from './components/ListadoOrden'
 import CrearOrden from './components/CrearOrden'
 import ActualizarOrden from './components/ActualizarOrden'
+import RecuperarContrasena from './components/RecuperarContrasena'
 
 const App = () => {
   return (
@@ -33,6 +34,10 @@ const App = () => {
         <Route
           path='registro'
           element={<Registro />}
+        />
+        <Route
+          path='recuperar'
+          element={<RecuperarContrasena />}
         />
         {/* rutas privadas */}
         <Route

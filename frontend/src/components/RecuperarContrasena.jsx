@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const RecuperarContrasena = () => {
   return (
     <main className='container-fluid min-vh-100 login bg-dark'>
       <nav className='navbar'>
@@ -30,53 +30,34 @@ const Login = () => {
             <form className='text-center mx-5 my-3'>
               <div className='mb-3'>
                 <label
-                  htmlFor='usuario'
+                  htmlFor='email'
                   className='form-label fs-4 text-white'
                 >
-                  Usuario
+                  Correo electrónico
                 </label>
                 <input
                   type='text'
                   className='form-control fs-4 rounded-pill'
-                  id='usuario'
-                  name='usuario'
+                  id='email'
+                  name='email'
                 />
               </div>
-              <div className='mb-3'>
-                <label
-                  htmlFor='contraseña'
-                  className='form-label fs-4 text-white'
-                >
-                  Contraseña
-                </label>
-                <input
-                  type='password'
-                  className='form-control fs-4 rounded-pill'
-                  id='contraseña'
-                  name='contraseña'
-                />
-              </div>
+
               <div className='mb-2'>
                 <Link
-                  to='/dash/listado'
+                  to='/login'
                   className='btn btn-dark btn-lg rounded-pill border-2'
                 >
-                  Iniciar sesión
+                  Recuperar contraseña
                 </Link>
               </div>
             </form>
             <div>
               <p className='text-center'>
                 <span className='text-white me-2 mb-3'>
-                  Aún no tienes cuenta?
+                  Deseas iniciar sesión?
                 </span>
-                <Link to='/registro'>Regístrate aquí</Link>
-              </p>
-              <p className='text-center'>
-                <span className='text-white me-2 mb-3'>
-                  Olvidaste tu contraseña?
-                </span>
-                <Link to='/recuperar'>Haz clic aquí</Link>
+                <Link to='/login'>Haz clic aquí</Link>
               </p>
             </div>
           </div>
@@ -86,4 +67,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default RecuperarContrasena

@@ -31,12 +31,19 @@ const ActualizarOrden = () => {
               <select
                 name='estado'
                 id='estado'
-                className='form-select'
+                className='form-select mt-4'
+                aria-describedby='estadoHelp'
               >
                 <option value='guardado'>Guardado</option>
                 <option value='cancelado'>Cancelado</option>
                 <option value='cumplido'>Cumplido</option>
               </select>
+              <div
+                id='estadoHelp'
+                class='form-text'
+              >
+                El estado será actualizado en 24 horas.
+              </div>
             </div>
           </div>
         </div>
