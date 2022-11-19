@@ -4,7 +4,7 @@ const ActualizarOrden = () => {
   return (
     <section className='p-0 mt-3'>
       <form>
-        <h1>Actualizar orden # 1</h1>
+        <h1>Actualizar orden # 53423123</h1>
         <div className='row'>
           <GrupoForm
             type='date'
@@ -27,7 +27,7 @@ const ActualizarOrden = () => {
                 Estado
               </label>
             </div>
-            <div className='col-auto flex-grow-1'>
+            <div className='col flex-grow-1 mt-5'>
               <select
                 name='estado'
                 id='estado'
@@ -38,12 +38,10 @@ const ActualizarOrden = () => {
                 <option value='cancelado'>Cancelado</option>
                 <option value='cumplido'>Cumplido</option>
               </select>
-              <div
-                id='estadoHelp'
-                class='form-text'
-              >
-                El estado será actualizado en 24 horas.
-              </div>
+              <p className='form-text'>
+                Si no actualiza el estado antes de 24 horas, se hará
+                automáticamente.
+              </p>
             </div>
           </div>
         </div>
@@ -53,25 +51,25 @@ const ActualizarOrden = () => {
             type='number'
             id='largo'
             name='largo'
-            label='Largo (m)'
+            label='Largo(m)'
           />
           <GrupoForm
             type='number'
             id='ancho'
             name='ancho'
-            label='Ancho (m)'
+            label='Ancho(m)'
           />
           <GrupoForm
             type='number'
             id='alto'
             name='alto'
-            label='Alto (m)'
+            label='Alto(m)'
           />
           <GrupoForm
             type='number'
             id='peso'
             name='peso'
-            label='Peso (kg)'
+            label='Peso(kg)'
           />
         </div>
         <h3 className='m-0 mt-4'>Datos de envío</h3>

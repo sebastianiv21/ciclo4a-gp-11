@@ -25,25 +25,25 @@ const CrearOrden = () => {
             type='number'
             id='largo'
             name='largo'
-            label='Largo (m)'
+            label='Largo(m)'
           />
           <GrupoForm
             type='number'
             id='ancho'
             name='ancho'
-            label='Ancho (m)'
+            label='Ancho(m)'
           />
           <GrupoForm
             type='number'
             id='alto'
             name='alto'
-            label='Alto (m)'
+            label='Alto(m)'
           />
           <GrupoForm
             type='number'
             id='peso'
             name='peso'
-            label='Peso (kg)'
+            label='Peso(kg)'
           />
         </div>
         <h3 className='m-0 mt-4'>Datos de envío</h3>
