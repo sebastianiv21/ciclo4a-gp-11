@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+// componentes
+import Boton from '../components/Boton'
 
 const Inicio = () => {
   return (
@@ -24,18 +26,19 @@ const Inicio = () => {
             Tempora, harum?
           </p>
           <div className='d-flex gap-3'>
-            <Link
-              to='/login'
-              className='btn btn-outline-primary btn-lg rounded-pill border-2'
-            >
-              Iniciar sesión
-            </Link>
-            <Link
-              to='/contacto'
-              className='btn btn-primary btn-lg rounded-pill border-2'
-            >
-              Mesa de ayuda
-            </Link>
+            <Boton
+              texto='Iniciar sesión'
+              ruta='/login'
+              color='primary'
+              outline
+              lg
+            />
+            <Boton
+              texto='Mesa de ayuda'
+              ruta='/contacto'
+              color='primary'
+              lg
+            />
           </div>
         </section>
       </article>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Boton from './Boton'
 
 const RecuperarContrasena = () => {
   return (
@@ -44,12 +45,12 @@ const RecuperarContrasena = () => {
               </div>
 
               <div className='mb-2'>
-                <Link
-                  to='/login'
-                  className='btn btn-dark btn-lg rounded-pill border-2'
-                >
-                  Recuperar contraseña
-                </Link>
+                <Boton
+                  texto='Recuperar contraseña'
+                  ruta='/login'
+                  color='dark'
+                  lg
+                />
               </div>
             </form>
             <div>

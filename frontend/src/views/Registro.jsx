@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Boton from '../components/Boton'
 
 const Registro = () => {
   return (
@@ -88,9 +89,12 @@ const Registro = () => {
                 />
               </div>
               <div className='mb-2'>
-                <button className='btn btn-dark btn-lg rounded-pill border-2'>
-                  Registrarse
-                </button>
+                <Boton
+                  texto='Registrarse'
+                  ruta='/login'
+                  color='dark'
+                  lg
+                />
               </div>
             </form>
             <div>

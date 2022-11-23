@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Boton from '../components/Boton'
 
 const Login = () => {
   return (
@@ -57,12 +58,12 @@ const Login = () => {
                 />
               </div>
               <div className='mb-2'>
-                <Link
-                  to='/dash/listado'
-                  className='btn btn-dark btn-lg rounded-pill border-2'
-                >
-                  Iniciar sesión
-                </Link>
+                <Boton
+                  texto='Iniciar sesión'
+                  ruta='/dash/listado'
+                  color='dark'
+                  lg
+                />
               </div>
             </form>
             <div>

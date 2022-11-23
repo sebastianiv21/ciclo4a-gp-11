@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+// componentes
+import Boton from './Boton'
 
 const DashHeader = () => {
   return (
@@ -33,12 +35,11 @@ const DashHeader = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link
-              to='/'
-              className='btn btn-primary rounded-pill'
-            >
-              Cerrar sesión
-            </Link>
+            <Boton
+              texto='Cerrar sesión'
+              ruta='/'
+              color='primary'
+            />
           </li>
         </ul>
       </nav>
